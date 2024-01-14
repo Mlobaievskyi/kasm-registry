@@ -31,6 +31,7 @@ test/tmp/**
 **/.idea
 **/.#*
 .nvmrc
+.history
 
 # examples
 examples/**/out

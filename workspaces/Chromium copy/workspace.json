@@ -1,0 +1,27 @@
+{
+  "friendly_name": "Kitty Terminal",
+  "image_src": "kitty.png",
+  "description": "Kitty is a fast, feature-rich, GPU based terminal emulator",
+  "name": "doctorwhen/kasm:kitty",
+  "cores": 2,
+  "memory": 4096,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
+  "categories": ["Productivity", "Desktop"],
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+  "run_config": {
+    "hostname": "kasm-kitty"
+  },
+  "exec_config": {
+    "first_launch": {
+      "user": "root",
+      "cmd": "bash -c 'echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
+    }
+  },
+  "architecture": ["amd64"],
+  "compatibility": ["1.14.x"],
+  "uncompressed_size_mb": 12500
+}
